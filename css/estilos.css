@@ -32,7 +32,6 @@ css productos
     background-color: white;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: black;
     box-shadow: 2px 2px 5px black;
     text-align: center;
   }
@@ -47,11 +46,6 @@ css productos
     color: black;
     font-weight: bold;
     margin-top: 10px;
-  }
-
-  footer {
-    margin-top: 30px;
-    text-align: center;
   }
 
 
@@ -95,16 +89,12 @@ _________________
 
 css contacto 
 
-body {
-    background-color: whitesmoke;
-    color: black;
-}
-
 h1 {
     text-align: center;
     color: green;
     margin-bottom: 10px;
 }
+
 
 .contacto {
     max-width: 400px;
@@ -163,7 +153,7 @@ footer {
     color: grey;
 }
 
-footer a {
+footer b {
     color: #4CAF50;
     text-decoration: underline;
 }
@@ -184,7 +174,7 @@ footer a {
 .mi-imagen {
   display: block;       
   margin: 0 auto;        
-  max-width: 100%;       
+  max-width: 70%;       
   height: auto;          
   object-fit: cover;
 }
