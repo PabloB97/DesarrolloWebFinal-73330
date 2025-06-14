@@ -1,0 +1,190 @@
+css productos
+  
+  body {
+    background-color: whitesmoke;
+    margin: 20px;
+    color: black;
+  }
+
+  .titulo {
+    text-align: center;
+    color: green;
+  }
+
+  .subtitulo {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 25px;
+  }
+
+  .item {
+    flex: 1 1 250px;
+    max-width: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: black;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+  }
+
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .precio {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+
+footer a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+
+
+_________________
+
+css contacto 
+
+body {
+    background-color: whitesmoke;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.contacto {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: black
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black; 
+}
+
+.btn{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+
+
+.mi-imagen {
+  display: block;       
+  margin: 0 auto;        
+  max-width: 100%;       
+  height: auto;          
+  object-fit: cover;
+}
