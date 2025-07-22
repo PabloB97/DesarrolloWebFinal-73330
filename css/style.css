@@ -28,6 +28,29 @@
   transform: scale(0.9);
 }
 
+#carouselProductos {
+  background-color: #f8f4e3;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+#carouselProductos .carousel-control-prev-icon,
+#carouselProductos .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#carouselProductos .carousel-control-prev {
+  left: 10px;
+}
+#carouselProductos .carousel-control-next {
+  right: 10px;
+}
+
 body {
   background-color: whitesmoke;
   margin: 20px;
@@ -63,21 +86,6 @@ h2 {
   align-items: center;
   padding: 5px;
   gap: 25px;
-}
-
-.item {
-  flex: 1 1 250px;
-  max-width: 200px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px black;
-  text-align: center;
-}
-.item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
 }
 
 .precio {
@@ -136,12 +144,37 @@ footer b {
   text-decoration: underline;
 }
 
-.mi-imagen {
+.item {
+  width: 320px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+.item img.mi-imagen {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
-  max-width: 70%;
-  height: auto;
-  object-fit: cover;
 }
 
-/*# sourceMappingURL=style.css.map */
+.img-principal {
+  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  margin: 0 auto;
+  object-fit: cover;
+  border: 8px solid #e6dcd0;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.img-principal:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=Style.css.map */

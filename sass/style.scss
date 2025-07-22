@@ -1,5 +1,7 @@
 @use "./components/_nav.scss";
 
+@use "./components/_carousel.scss";
+
 body {
   background-color: whitesmoke;
   margin: 20px;
@@ -35,22 +37,6 @@ h2 {
   align-items: center;
   padding: 5px;
   gap: 25px;
-}
-
-.item {
-  flex: 1 1 250px;
-  max-width: 200px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px black;
-  text-align: center;
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
 }
 
 .precio {
@@ -113,13 +99,40 @@ footer {
   }
 }
 
-.mi-imagen {
-  display: block;
-  margin: 0 auto;
-  max-width: 70%;
-  height: auto;
-  object-fit: cover;
+.item {
+  width: 320px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px;
+
+  img.mi-imagen {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; // o contain si quieres que se vea toda la imagen
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 
+.img-principal {
+  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  margin: 0 auto;
+  object-fit: cover;
 
+  border: 8px solid #e6dcd0; // borde color hueso claro
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); // sombra suave
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02); // efecto sutil al pasar el mouse
+  }
+}
